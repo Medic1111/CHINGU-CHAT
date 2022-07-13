@@ -1,0 +1,18 @@
+{
+  "name": "untitled-folder-2",
+  "version": "1.0.0",
+  "description": "LIVE SHARE DISCORD",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server/index.js",
+    "build": "cd client && npm install && npm run build"
+  },
+  "author": "Aryse <medictansy@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "morgan": "^1.10.0",
+    "socket.io": "^4.5.1"
+  }
+}
