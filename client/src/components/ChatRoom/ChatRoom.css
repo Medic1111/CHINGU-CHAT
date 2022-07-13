@@ -1,0 +1,15 @@
+.ChatRoom {
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  height: 100%;
+}
+
+.title {
+  height: 3rem;
+  line-height: 3rem;
+  text-align: center;
+  background-color: var(--secondary-background-color);
+  color: var(--secondary-text-color);
+  border-bottom: 0.5px solid var(--border-color);
+}
