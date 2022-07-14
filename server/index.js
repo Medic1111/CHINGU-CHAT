@@ -29,6 +29,7 @@ io.on("connection", (socket) => {
   });
 
   socket.on("SEND_MSG", (msgContent) => {
+    console.log(msgContent);
     socket.to(msgContent.roomId).emit("RECEIVE_MSG", msgContent.message);
   });
 

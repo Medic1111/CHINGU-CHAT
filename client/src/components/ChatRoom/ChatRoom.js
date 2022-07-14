@@ -2,7 +2,7 @@ import "./ChatRoom.css";
 import ChatForm from "../ChatForm/ChatForm";
 import ChatMessages from "../ChatMessages/ChatMessages";
 
-function ChatRoom({ socket, messages, setMessages, roomId }) {
+function ChatRoom({ socket, messages, setMessages, roomId, username }) {
   return (
     <div className="ChatRoom">
       <h1 className="title">CHAT ROOM</h1>
@@ -12,6 +12,7 @@ function ChatRoom({ socket, messages, setMessages, roomId }) {
         messages={messages}
         socket={socket}
         roomId={roomId}
+        username={username}
       />
     </div>
   );

@@ -10,6 +10,7 @@ function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [messages, setMessages] = useState([]);
   const [roomId, setRoomId] = useState("");
+  const [username, setUsername] = useState("");
 
   const listenToIncoming = () => {
     console.log("Effect running");
@@ -30,6 +31,8 @@ function App() {
           setIsLoggedIn={setIsLoggedIn}
           roomId={roomId}
           setRoomId={setRoomId}
+          username={username}
+          setUsername={setUsername}
         />
       )}
       {isLoggedIn && (
@@ -38,6 +41,7 @@ function App() {
           messages={messages}
           setMessages={setMessages}
           roomId={roomId}
+          username={username}
         />
       )}
     </div>

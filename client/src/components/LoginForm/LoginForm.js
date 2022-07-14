@@ -1,8 +1,13 @@
 import { useState } from "react";
 
-function LoginForm({ socket, setIsLoggedIn, roomId, setRoomId }) {
-  const [username, setUsername] = useState("");
-
+function LoginForm({
+  socket,
+  setIsLoggedIn,
+  roomId,
+  setRoomId,
+  username,
+  setUsername,
+}) {
   const handleSubmit = (e) => {
     e.preventDefault();
     let data = {
