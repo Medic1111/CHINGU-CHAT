@@ -21,7 +21,16 @@ app.get("*", (req, res) => {
 const io = socketio(server);
 
 io.on("connection", (socket) => {
-  console.log("User Connected: ", socket.id);
+  socket.on("JOIN_ROOM", (data) => {
+    socket.join(data.roomId);
+    socket
+      .to(data.roomId)
+      .emit("RECEIVE_MSG", `${data.username} has entered the room`);
+  });
+
+  socket.on("SEND_MSG", (msgContent) => {
+    socket.to(msgContent.roomId).emit("RECEIVE_MSG", msgContent.message);
+  });
 
   socket.on("disconnect", () => console.log("User out"));
 });

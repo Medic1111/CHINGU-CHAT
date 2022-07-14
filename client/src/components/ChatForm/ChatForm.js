@@ -1,13 +1,22 @@
 import { useState, useEffect } from "react";
 import "./ChatForm.css";
 
-function ChatForm({ messages, setMessages }) {
+function ChatForm({ messages, setMessages, socket, roomId }) {
   const [message, setMessage] = useState("");
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     if (message) {
       setMessages([...messages, message]);
+
+      // Sending MSG
+
+      let messageObj = {
+        message: message,
+        roomId: roomId,
+      };
+
+      await socket.emit("SEND_MSG", messageObj);
       setMessage("");
     }
   };

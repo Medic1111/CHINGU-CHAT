@@ -1,12 +1,16 @@
 import { useState } from "react";
 
-function LoginForm() {
+function LoginForm({ socket, setIsLoggedIn, roomId, setRoomId }) {
   const [username, setUsername] = useState("");
-  const [roomId, setRoomId] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(username, roomId);
+    let data = {
+      username: username,
+      roomId: roomId,
+    };
+    socket.emit("JOIN_ROOM", data);
+    setIsLoggedIn(true);
   };
 
   return (
