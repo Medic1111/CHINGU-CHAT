@@ -1,5 +1,6 @@
 .ChatForm {
   height: 2.5rem;
+  min-height: 2.5rem;
   display: flex;
   border-top: 0.1px solid var(--border-color);
   justify-content: space-between;

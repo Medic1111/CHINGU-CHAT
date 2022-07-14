@@ -12,16 +12,43 @@
 
 .messageList {
   list-style: none;
+  padding: 0;
+}
+
+.messageList > div {
   display: flex;
   flex-direction: column;
 }
 
 .message {
-  display: inline;
-  margin-bottom: 0.75rem;
-  width: min-content;
+  margin-bottom: 0.5rem;
+  width: max-content;
+  max-width: 90vw;
   background-color: var(--bubble-color);
   color: var(--text-color);
   border-radius: 1rem;
   padding: 0.5rem;
+}
+
+.message-self {
+  background-color: var(--self-bubble-color);
+}
+
+.message-info {
+  color: var(--button-color);
+  font-size: 0.75rem;
+  margin-bottom: 0.75rem;
+  padding-left: 0.25rem;
+}
+
+.join-info {
+  text-align: center;
+  color: var(--button-color);
+  font-size: 0.75rem;
+  margin-bottom: 0.75rem;
+  padding-left: 0.25rem;
+}
+
+.flex-end {
+  align-self: end;
 }

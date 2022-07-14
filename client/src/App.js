@@ -3,6 +3,7 @@ import io from "socket.io-client";
 import { useState, useEffect } from "react";
 import LoginForm from "./components/LoginForm/LoginForm";
 import ChatRoom from "./components/ChatRoom/ChatRoom";
+import Footer from "./components/Footer/Footer";
 
 const socket = io.connect("/");
 
@@ -21,7 +22,7 @@ function App() {
     });
   };
 
-  useEffect(listenToIncoming, [socket]);
+  useEffect(listenToIncoming, []);
 
   return (
     <div className="App">
@@ -44,6 +45,7 @@ function App() {
           username={username}
         />
       )}
+      <Footer />
     </div>
   );
 }
