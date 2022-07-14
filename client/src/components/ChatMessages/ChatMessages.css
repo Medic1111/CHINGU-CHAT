@@ -1,0 +1,27 @@
+.ChatMessages {
+  background-color: var(--background-color);
+  flex-grow: 1;
+  overflow-y: scroll;
+  padding: 0.5rem;
+}
+
+/* hide scrollbars */
+.ChatMessages::-webkit-scrollbar {
+  display: none;
+}
+
+.messageList {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.message {
+  display: inline;
+  margin-bottom: 0.75rem;
+  width: min-content;
+  background-color: var(--bubble-color);
+  color: var(--text-color);
+  border-radius: 1rem;
+  padding: 0.5rem;
+}
