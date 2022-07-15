@@ -70,12 +70,11 @@ _After_ _Meeting_
 
 - Duration: 1hr
 - Objective:
-  - [ ] Code review
-  - [ ] Testing
-  - [ ] Address bugs if any found
-  - [ ] Consider future features
-  - [ ] Merge outstanding branches
+  - [x] Code review
+  - [x] Testing
+  - [x] Address bugs if any found
   - [ ] Deploy Production version
   - [ ] Enhance documentation
   - [ ] Add MIT license
+  - [ ] Consider future features
   - [ ] Celebrate
