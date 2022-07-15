@@ -6,13 +6,13 @@
 
 **CONTRIBUTORS:**
 
-:pointright: Aryse Tansy
+:point_right: Aryse Tansy
 :e-mail: paganowebdev@gmail.com
-[:computer:](https://www.pagano.dev/)
+:computer:[](https://www.pagano.dev/)
 
-:pointright: John Malapit
+:point_right: John Malapit
 :e-mail: contact@johnmal.dev
-[:computer:](https://www.johnmal.dev/)
+:computer:[](https://www.johnmal.dev/)
 
 ---
 
