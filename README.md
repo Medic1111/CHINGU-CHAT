@@ -2,15 +2,17 @@
 
 > Project developed in a pair-programming session arranged by the Chingu.io team
 
----
-
 **CONTRIBUTORS:**
+
+---
 
 :point_right: Aryse Tansy
 
 :e-mail: paganowebdev@gmail.com
 
 :computer: [Portfolio](https://www.pagano.dev/)
+
+---
 
 :point_right: John Malapit
 
