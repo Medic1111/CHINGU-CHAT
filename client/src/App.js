@@ -1,24 +1,22 @@
 import "./App.css";
 import io from "socket.io-client";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
 import LoginForm from "./components/LoginForm/LoginForm";
 import ChatRoom from "./components/ChatRoom/ChatRoom";
 import Footer from "./components/Footer/Footer";
+import { userCtx } from "./store/user-ctx";
 
 const socket = io.connect("/");
 
 function App() {
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
-  const [messages, setMessages] = useState([]);
+  const ctx = useContext(userCtx);
+
   const [roomId, setRoomId] = useState("");
   const [username, setUsername] = useState("");
 
   const listenToIncoming = () => {
-    console.log("Effect running");
     socket.on("RECEIVE_MSG", (data) => {
-      setMessages((prev) => {
-        return [...prev, data];
-      });
+      ctx.onSetMessages(data);
     });
   };
 
@@ -26,24 +24,17 @@ function App() {
 
   return (
     <div className="App">
-      {!isLoggedIn && (
+      {!ctx.isLoggedIn && (
         <LoginForm
           socket={socket}
-          setIsLoggedIn={setIsLoggedIn}
           roomId={roomId}
           setRoomId={setRoomId}
           username={username}
           setUsername={setUsername}
         />
       )}
-      {isLoggedIn && (
-        <ChatRoom
-          socket={socket}
-          messages={messages}
-          setMessages={setMessages}
-          roomId={roomId}
-          username={username}
-        />
+      {ctx.isLoggedIn && (
+        <ChatRoom socket={socket} roomId={roomId} username={username} />
       )}
       <Footer />
     </div>

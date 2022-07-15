@@ -1,13 +1,10 @@
 import "./LoginForm.css";
+import { userCtx } from "../../store/user-ctx";
+import { useContext } from "react";
 
-function LoginForm({
-  socket,
-  setIsLoggedIn,
-  roomId,
-  setRoomId,
-  username,
-  setUsername,
-}) {
+function LoginForm({ socket, roomId, setRoomId, username, setUsername }) {
+  const ctx = useContext(userCtx);
+
   const handleSubmit = (e) => {
     e.preventDefault();
     let data = {
@@ -15,7 +12,7 @@ function LoginForm({
       roomId: roomId,
     };
     socket.emit("JOIN_ROOM", data);
-    setIsLoggedIn(true);
+    ctx.setIsLoggedIn(true);
   };
 
   return (
