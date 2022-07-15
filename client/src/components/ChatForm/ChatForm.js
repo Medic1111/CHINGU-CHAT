@@ -1,28 +1,28 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import "./ChatForm.css";
 
 function ChatForm({ messages, setMessages, socket, roomId, username }) {
   const [message, setMessage] = useState("");
 
-  let currentTime = `${new Date().getHours()}:${new Date().getMinutes()}`;
-
-  let currentTimeWithPad = currentTime.padStart(2, "0");
+  let currentHours = `${new Date().getHours()}`;
+  let currentMinutes = `${new Date().getMinutes()}`;
+  let currentTimeWithPad = `${currentHours}:${currentMinutes.padStart(2, "0")}`;
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     if (message) {
-      setMessages([...messages, message]);
-
       // Sending MSG
 
-      let messageObj = {
+      let newMessageObj = {
         message: message,
         roomId: roomId,
         username: username,
         time: currentTimeWithPad,
+        type: "message",
       };
+      setMessages([...messages, newMessageObj]);
 
-      await socket.emit("SEND_MSG", messageObj);
+      await socket.emit("SEND_MSG", newMessageObj);
       setMessage("");
     }
   };

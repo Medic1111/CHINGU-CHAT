@@ -23,14 +23,15 @@ const io = socketio(server);
 io.on("connection", (socket) => {
   socket.on("JOIN_ROOM", (data) => {
     socket.join(data.roomId);
-    socket
-      .to(data.roomId)
-      .emit("RECEIVE_MSG", `${data.username} has entered the room`);
+    socket.to(data.roomId).emit("RECEIVE_MSG", {
+      type: "join-info",
+      content: `${data.username} has entered the room`,
+    });
   });
 
   socket.on("SEND_MSG", (msgContent) => {
     console.log(msgContent);
-    socket.to(msgContent.roomId).emit("RECEIVE_MSG", msgContent.message);
+    socket.to(msgContent.roomId).emit("RECEIVE_MSG", msgContent);
   });
 
   socket.on("disconnect", () => console.log("User out"));

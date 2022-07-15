@@ -5,8 +5,8 @@ import ChatMessages from "../ChatMessages/ChatMessages";
 function ChatRoom({ socket, messages, setMessages, roomId, username }) {
   return (
     <div className="ChatRoom">
-      <h1 className="title">CHAT ROOM</h1>
-      <ChatMessages messages={messages} />
+      <h1 className="title">{`Room #${roomId}`}</h1>
+      <ChatMessages messages={messages} username={username} />
       <ChatForm
         setMessages={setMessages}
         messages={messages}

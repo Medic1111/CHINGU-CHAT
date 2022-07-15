@@ -1,4 +1,4 @@
-import { useState } from "react";
+import "./LoginForm.css";
 
 function LoginForm({
   socket,
@@ -20,24 +20,32 @@ function LoginForm({
 
   return (
     <div className="LoginForm">
-      <h1>Login</h1>
-      <form onSubmit={handleSubmit}>
-        <input
-          type="text"
-          id="username"
-          name="username"
-          value={username}
-          onChange={(e) => setUsername(e.target.value)}
-        />
-        <input
-          type="text"
-          id="roomId"
-          name="roomId"
-          value={roomId}
-          onChange={(e) => setRoomId(e.target.value)}
-        />
-        <input type="submit" value="SUBMIT" />
-      </form>
+      <div className="container">
+        <h1>Chingu Chat</h1>
+        <form onSubmit={handleSubmit}>
+          <input
+            type="text"
+            id="username"
+            name="username"
+            placeholder="username"
+            value={username}
+            onChange={(e) => setUsername(e.target.value)}
+            autoComplete="off"
+            required
+          />
+          <input
+            type="text"
+            id="roomId"
+            name="roomId"
+            placeholder="room ID"
+            value={roomId}
+            onChange={(e) => setRoomId(e.target.value)}
+            autoComplete="off"
+            required
+          />
+          <input type="submit" value="ENTER" />
+        </form>
+      </div>
     </div>
   );
 }
