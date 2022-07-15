@@ -8,7 +8,7 @@ const Footer = () => {
         rel="external noreferrer"
         href="https://github.com/Medic1111/pair-session-chat"
       >
-        <i class="fa-brands fa-github"></i>
+        <i className="fa-brands fa-github"></i>
       </a>
     </footer>
   );
