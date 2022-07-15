@@ -1,5 +1,5 @@
 {
-  "name": "untitled-folder-2",
+  "name": "chingu-app",
   "version": "1.0.0",
   "description": "LIVE SHARE DISCORD",
   "main": "index.js",
@@ -12,7 +12,6 @@
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.18.1",
-    "morgan": "^1.10.0",
     "socket.io": "^4.5.1"
   }
 }
