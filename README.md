@@ -23,7 +23,7 @@ Chat application where a login user inputs a desired room id, and is able to joi
   - Express
   - Socket.io
 
-### Pair-Proggram quick summary
+### Pair-Programming quick summary
 
 - Discord
 - VS Code live-share extension
@@ -70,12 +70,12 @@ _After_ _Meeting_
 
 - Duration: 1hr
 - Objective:
-  - [] Code review
-  - [] Testing
-  - [] Address bugs if any found
-  - [] Consider future features
-  - [] Merge outstanding branches
-  - [] Deploy Production version
-  - [] Enhance documentation
-  - [] Add MIT license
-  - [] Celebrate
+  - [ ] Code review
+  - [ ] Testing
+  - [ ] Address bugs if any found
+  - [ ] Consider future features
+  - [ ] Merge outstanding branches
+  - [ ] Deploy Production version
+  - [ ] Enhance documentation
+  - [ ] Add MIT license
+  - [ ] Celebrate
