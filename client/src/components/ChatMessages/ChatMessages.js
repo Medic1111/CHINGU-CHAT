@@ -3,7 +3,7 @@ import { useContext } from "react";
 import { userCtx } from "../../store/user-ctx";
 import ScrollToBottom from "react-scroll-to-bottom";
 
-function ChatMessages({ username }) {
+function ChatMessages() {
   const ctx = useContext(userCtx);
 
   return (
@@ -16,7 +16,7 @@ function ChatMessages({ username }) {
                 <div key={`Message_${index}`}>
                   <li
                     className={
-                      username === message.username
+                      ctx.username === message.username
                         ? "message message-self flex-end"
                         : "message"
                     }
@@ -25,7 +25,7 @@ function ChatMessages({ username }) {
                   </li>
                   <li
                     className={
-                      username === message.username
+                      ctx.username === message.username
                         ? "message-info flex-end"
                         : "message-info"
                     }

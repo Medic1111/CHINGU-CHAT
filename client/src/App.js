@@ -1,6 +1,6 @@
 import "./App.css";
 import io from "socket.io-client";
-import { useState, useEffect, useContext } from "react";
+import { useEffect, useContext } from "react";
 import LoginForm from "./components/LoginForm/LoginForm";
 import ChatRoom from "./components/ChatRoom/ChatRoom";
 import Footer from "./components/Footer/Footer";
@@ -10,9 +10,6 @@ const socket = io.connect("/");
 
 function App() {
   const ctx = useContext(userCtx);
-
-  const [roomId, setRoomId] = useState("");
-  const [username, setUsername] = useState("");
 
   const listenToIncoming = () => {
     socket.on("RECEIVE_MSG", (data) => {
@@ -24,17 +21,10 @@ function App() {
 
   return (
     <div className="App">
-      {!ctx.isLoggedIn && (
-        <LoginForm
-          socket={socket}
-          roomId={roomId}
-          setRoomId={setRoomId}
-          username={username}
-          setUsername={setUsername}
-        />
-      )}
-      {ctx.isLoggedIn && (
-        <ChatRoom socket={socket} roomId={roomId} username={username} />
+      {!ctx.isLoggedIn ? (
+        <LoginForm socket={socket} />
+      ) : (
+        <ChatRoom socket={socket} />
       )}
       <Footer />
     </div>

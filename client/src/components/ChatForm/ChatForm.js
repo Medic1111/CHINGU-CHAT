@@ -2,8 +2,9 @@ import { useState, useContext } from "react";
 import { userCtx } from "../../store/user-ctx";
 import "./ChatForm.css";
 
-function ChatForm({ socket, roomId, username }) {
+function ChatForm({ socket }) {
   const ctx = useContext(userCtx);
+
   const [message, setMessage] = useState("");
 
   let currentHours = `${new Date().getHours()}`;
@@ -13,12 +14,10 @@ function ChatForm({ socket, roomId, username }) {
   const handleSubmit = async (e) => {
     e.preventDefault();
     if (message) {
-      // Sending MSG
-
       let newMessageObj = {
-        message: message,
-        roomId: roomId,
-        username: username,
+        message,
+        roomId: ctx.roomId,
+        username: ctx.username,
         time: currentTimeWithPad,
         type: "message",
       };
