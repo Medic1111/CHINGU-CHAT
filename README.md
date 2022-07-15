@@ -8,11 +8,11 @@
 
 :point_right: Aryse Tansy
 :e-mail: paganowebdev@gmail.com
-:computer: [""](https://www.pagano.dev/)
+:computer: ["Portfolio"](https://www.pagano.dev/)
 
 :point_right: John Malapit
 :e-mail: contact@johnmal.dev
-:computer: [""](https://www.johnmal.dev/)
+:computer: ["Portfolio"](https://www.johnmal.dev/)
 
 ---
 
