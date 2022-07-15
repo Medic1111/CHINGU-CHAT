@@ -73,8 +73,8 @@ _After_ _Meeting_
   - [x] Code review
   - [x] Testing
   - [x] Address bugs if any found
-  - [ ] Deploy Production version
+  - [x] Deploy Production version
   - [ ] Enhance documentation
-  - [ ] Add MIT license
-  - [ ] Consider future features
-  - [ ] Celebrate
+  - [x] Add MIT license
+  - [x] Consider future features
+  - [x] Celebrate
