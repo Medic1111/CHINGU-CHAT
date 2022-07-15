@@ -1,41 +1,64 @@
 # Chingu-Chat
 
+![Demo of App](demo.gif)
+
+This is a chat application where a login user inputs a desired room ID, and is able to join the chat and communicate in real-time.
+
 > Project developed in a pair-programming session arranged by the Chingu.io team
 
-[Live here](https://chingu-chat.herokuapp.com/)
+## Table of contents
 
-![Image of Login Page](one.png)
+- [Overview](#overview)
+  - [The Goal](#the-goal)
+  - [Screenshots](#screenshots)
+  - [Links](#links)
+- [Our Process](#our-process)
+  - [Built with](#built-with)
+  - [Session Logs](#session-logs)
+    - [Session 1](#session-1)
+    - [Session 2](#session-2)
+    - [Session 3](#session-3)
+- [Authors](#authors)
 
+## Overview
+
+### The Goal
+
+The goal was to build a real-time chat interface where multiple users can interact with each other by sending messages.
+
+### Screenshots
+
+![Image of Log In](one.png)
 ![Image of Chat Room](two.png)
 
-## The Project
+### Links
 
-Chat application where a login user inputs a desired room id, and is able to join the chat and communicate real time
+- GitHub: [github.com/medic1111/pair-session-chat](https://github.com/medic1111/pair-session-chat)
+- Live Site: [chingu-chat.herokuapp.com/](https://chingu-chat.herokuapp.com/)
 
-## Tech
+## Our Process
 
-- Frontend:
+### Built With
 
+- Frontend
   - React.js
-
-- Backend:
+- Backend
   - Node.js
   - Express
   - Socket.io
+- Tech
+  - Discord
+  - VS Code live-share extension
+  - git/Github
 
-### Pair-Programming quick summary
+### Session Logs
 
-- Discord
-- VS Code live-share extension
-- git/Github
-- Total meetings: 3
-
-#### MEETING ONE:
+#### Session 1:
 
 - Duration: 1:30
-- Objective:
+- Objectives:
   - [x] Choose project
-  - [x] Plan meeting platforms
+  - [x] Plan Session platforms
   - [x] Set a schedule
   - [x] Development of project structure
   - [x] Install all needed dependencies
@@ -45,31 +68,26 @@ Chat application where a login user inputs a desired room id, and is able to joi
   - [x] Determine client _states_
   - [x] Work with dummy data rendering
   - [x] Deploy development version
+- After Session
+  - John: Implement UI/UX on CHAT, Client structure
 
-_After_ _Meeting_
-
-> John: Implement UI/UX on CHAT, Client structure
-
-#### MEETING TWO:
+#### Session 2:
 
 - Duration: 1:30
-- Objective:
+- Objectives:
   - [x] Integrate Socket.io client
   - [x] Integrate Socket.io server
   - [x] Manual testing
   - [x] Update development deployed version
   - [x] Manual live testing
+- After Session
+  - John: Implement UI/UX on LOGIN, Client structure and clean-up
+  - Aryse: Transfer useState to useContext, implement auto scrolling to bottom on CHAT, delete unused dependencies
 
-_After_ _Meeting_
-
-> John: Implement UI/UX on LOGIN, Client structure and clean-up
-
-> Aryse: Transfer useState to useContext, implement auto scrolling to bottom on CHAT, delete unused dependencies
-
-#### MEETING THREE:
+#### Session 3:
 
 - Duration: 1hr
-- Objective:
+- Objectives:
   - [x] Code review
   - [x] Testing
   - [x] Address bugs if any found
@@ -78,3 +96,10 @@ _After_ _Meeting_
   - [x] Add MIT license
   - [x] Consider future features
   - [x] Celebrate
+- After Session
+  - John: update login card placement, enhance README docs
+
+### Authors
+
+- Aryse Gabrielle Pagano - [GitHub](https://github.com/medic1111/)
+- John Malapit - [GitHub](https://github.com/johnmal-dev), [LinkedIn](https://www.linkedin.com/in/john-mal/)
