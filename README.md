@@ -2,15 +2,29 @@
 
 > Project developed in a pair-programming session arranged by the Chingu.io team
 
+---
+
+**CONTRIBUTORS:**
+
+:pointright: Aryse Tansy
+:e-mail: paganowebdev@gmail.com
+[:computer:](https://www.pagano.dev/)
+
+:pointright: John Malapit
+:e-mail: contact@johnmal.dev
+[:computer:](https://www.johnmal.dev/)
+
+---
+
+## The Project
+
+Chat application where a login user inputs a desired room id, and is able to join the chat and communicate real time
+
 [Live here](https://chingu-chat.herokuapp.com/)
 
 ![Image of Login Page](one.png)
 
 ![Image of Chat Room](two.png)
-
-## The Project
-
-Chat application where a login user inputs a desired room id, and is able to join the chat and communicate real time
 
 ## Tech
 
