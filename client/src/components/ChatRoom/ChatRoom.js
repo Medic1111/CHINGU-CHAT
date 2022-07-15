@@ -1,19 +1,17 @@
 import "./ChatRoom.css";
+import { useContext } from "react";
+import { userCtx } from "../../store/user-ctx";
 import ChatForm from "../ChatForm/ChatForm";
 import ChatMessages from "../ChatMessages/ChatMessages";
 
-function ChatRoom({ socket, messages, setMessages, roomId, username }) {
+function ChatRoom({ socket }) {
+  const ctx = useContext(userCtx);
+
   return (
     <div className="ChatRoom">
-      <h1 className="title">{`Room #${roomId}`}</h1>
-      <ChatMessages messages={messages} username={username} />
-      <ChatForm
-        setMessages={setMessages}
-        messages={messages}
-        socket={socket}
-        roomId={roomId}
-        username={username}
-      />
+      <h1 className="title">{`Room #${ctx.roomId}`}</h1>
+      <ChatMessages />
+      <ChatForm socket={socket} />
     </div>
   );
 }

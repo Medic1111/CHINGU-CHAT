@@ -1,43 +1,81 @@
-LIVE SHARE
-DISCORD
+# Chingu-Chat
 
-### FRONTEND: REACT:
+> Project developed in a pair-programming session arranged by the Chingu.io team
 
-- Remove strict mode
-- Form (home): Login
-- Chat
+[Live here](https://chingu-chat.herokuapp.com/)
 
-Leave the chat:
+![Image of Login Page](one.png)
 
-- Stop listening
+![Image of Chat Room](two.png)
 
-dependencies:
+## The Project
 
-- Socke.io client
+Chat application where a login user inputs a desired room id, and is able to join the chat and communicate real time
 
-### BACKEND:
+## Tech
 
-- Cors
-- Express
-- Morgan
-- socket.io
+- Frontend:
 
-- Node/express:
+  - React.js
 
-Socket:
+- Backend:
+  - Node.js
+  - Express
+  - Socket.io
 
-- Connect
-- join room
-- Receive msg
-- send msg
-- Disconnect -
+### Pair-Programming quick summary
 
-### MVP
+- Discord
+- VS Code live-share extension
+- git/Github
+- Total meetings: 3
 
-Keep it to Session
+#### MEETING ONE:
 
-### Heroku
+- Duration: 1:30
+- Objective:
+  - [x] Choose project
+  - [x] Plan meeting platforms
+  - [x] Set a schedule
+  - [x] Development of project structure
+  - [x] Install all needed dependencies
+  - [x] Development of server
+  - [x] Rough blueprint of client
+  - [x] Ensure client/server communication
+  - [x] Determine client _states_
+  - [x] Work with dummy data rendering
+  - [x] Deploy development version
 
-Deploying
+_After_ _Meeting_
 
-### Today:
+> John: Implement UI/UX on CHAT, Client structure
+
+#### MEETING TWO:
+
+- Duration: 1:30
+- Objective:
+  - [x] Integrate Socket.io client
+  - [x] Integrate Socket.io server
+  - [x] Manual testing
+  - [x] Update development deployed version
+  - [x] Manual live testing
+
+_After_ _Meeting_
+
+> John: Implement UI/UX on LOGIN, Client structure and clean-up
+
+> Aryse: Transfer useState to useContext, implement auto scrolling to bottom on CHAT, delete unused dependencies
+
+#### MEETING THREE:
+
+- Duration: 1hr
+- Objective:
+  - [ ] Code review
+  - [ ] Testing
+  - [ ] Address bugs if any found
+  - [ ] Consider future features
+  - [ ] Merge outstanding branches
+  - [ ] Deploy Production version
+  - [ ] Enhance documentation
+  - [ ] Add MIT license
+  - [ ] Celebrate

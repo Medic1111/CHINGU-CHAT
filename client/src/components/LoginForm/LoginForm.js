@@ -1,21 +1,18 @@
 import "./LoginForm.css";
+import { userCtx } from "../../store/user-ctx";
+import { useContext } from "react";
 
-function LoginForm({
-  socket,
-  setIsLoggedIn,
-  roomId,
-  setRoomId,
-  username,
-  setUsername,
-}) {
+function LoginForm({ socket }) {
+  const ctx = useContext(userCtx);
+
   const handleSubmit = (e) => {
     e.preventDefault();
     let data = {
-      username: username,
-      roomId: roomId,
+      username: ctx.username,
+      roomId: ctx.roomId,
     };
     socket.emit("JOIN_ROOM", data);
-    setIsLoggedIn(true);
+    ctx.setIsLoggedIn(true);
   };
 
   return (
@@ -28,8 +25,8 @@ function LoginForm({
             id="username"
             name="username"
             placeholder="username"
-            value={username}
-            onChange={(e) => setUsername(e.target.value)}
+            value={ctx.username}
+            onChange={(e) => ctx.onSetUsername(e.target.value)}
             autoComplete="off"
             required
           />
@@ -38,8 +35,8 @@ function LoginForm({
             id="roomId"
             name="roomId"
             placeholder="room ID"
-            value={roomId}
-            onChange={(e) => setRoomId(e.target.value)}
+            value={ctx.roomId}
+            onChange={(e) => ctx.onSetRoomId(e.target.value)}
             autoComplete="off"
             required
           />
