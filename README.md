@@ -1,61 +1,65 @@
 # Chingu-Chat
 
+![Demo of App](demo.gif)
+
+This is a chat application where a user inputs a username and the desired room ID, and can join the chat and communicate in real-time.
+
 > Project developed in a pair-programming session arranged by the Chingu.io team
 
-**CONTRIBUTORS:**
+## Table of contents
 
----
+- [Overview](#overview)
+  - [The Goal](#the-goal)
+  - [Screenshots](#screenshots)
+  - [Links](#links)
+- [Our Process](#our-process)
+  - [Built With](#built-with)
+  - [Session Logs](#session-logs)
+    - [Session 1](#session-1)
+    - [Session 2](#session-2)
+    - [Session 3](#session-3)
+- [Contributors](#contributors)
+- [License](#license)
 
-:point_right: Aryse Tansy
+## Overview
 
-:e-mail: paganowebdev@gmail.com
+### The Goal
 
-:computer: [Portfolio](https://www.pagano.dev/)
+The goal was to build a real-time chat interface where multiple users can interact with each other by sending messages.
 
----
+### Screenshots
 
-:point_right: John Malapit
-
-:e-mail: contact@johnmal.dev
-
-:computer: [Portfolio](https://www.johnmal.dev/)
-
----
-
-## The Project
-
-Chat application where a login user inputs a desired room id, and is able to join the chat and communicate real time
-
-[Live here](https://chingu-chat.herokuapp.com/)
-
-![Image of Login Page](one.png)
-
+![Image of Log In](one.png)
 ![Image of Chat Room](two.png)
 
-## Tech
+### Links
 
-- Frontend:
+- GitHub: [github.com/medic1111/pair-session-chat](https://github.com/medic1111/pair-session-chat)
+- Live Site: [chingu-chat.herokuapp.com/](https://chingu-chat.herokuapp.com/)
 
+## Our Process
+
+### Built With
+
+- Frontend
   - React.js
-
-- Backend:
+- Backend
   - Node.js
   - Express
   - Socket.io
+- Tech
+  - Discord
+  - VS Code live-share extension
+  - git/Github
 
-### Pair-Programming quick summary
+### Session Logs
 
-- Discord
-- VS Code live-share extension
-- git/Github
-- Total meetings: 3
-
-#### MEETING ONE:
+#### Session 1:
 
 - Duration: 1:30
-- Objective:
+- Objectives:
   - [x] Choose project
-  - [x] Plan meeting platforms
+  - [x] Plan Session platforms
   - [x] Set a schedule
   - [x] Development of project structure
   - [x] Install all needed dependencies
@@ -65,36 +69,47 @@ Chat application where a login user inputs a desired room id, and is able to joi
   - [x] Determine client _states_
   - [x] Work with dummy data rendering
   - [x] Deploy development version
+- After Session
+  - John: Implement UI/UX on CHAT, Client structure
 
-_After_ _Meeting_
-
-> John: Implement UI/UX on CHAT, Client structure
-
-#### MEETING TWO:
+#### Session 2:
 
 - Duration: 1:30
-- Objective:
+- Objectives:
   - [x] Integrate Socket.io client
   - [x] Integrate Socket.io server
   - [x] Manual testing
   - [x] Update development deployed version
   - [x] Manual live testing
+- After Session
+  - John: Implement UI/UX on LOGIN, Client structure and clean-up
+  - Aryse: Transfer useState to useContext, implement auto scrolling to bottom on CHAT, delete unused dependencies
 
-_After_ _Meeting_
-
-> John: Implement UI/UX on LOGIN, Client structure and clean-up
-
-> Aryse: Transfer useState to useContext, implement auto scrolling to bottom on CHAT, delete unused dependencies
-
-#### MEETING THREE:
+#### Session 3:
 
 - Duration: 1hr
-- Objective:
+- Objectives:
   - [x] Code review
   - [x] Testing
   - [x] Address bugs if any found
   - [x] Deploy Production version
-  - [ ] Enhance documentation
+  - [x] Enhance documentation
   - [x] Add MIT license
   - [x] Consider future features
   - [x] Celebrate
+- After Session
+  - John: update login card placement, enhance README docs
+
+### Contributors
+
+**:point_right: Aryse Tansy**
+:e-mail: paganowebdev@gmail.com
+:computer: [Portfolio](https://www.pagano.dev/)
+
+**:point_right: John Malapit**
+:e-mail: [contact@johnmal.dev](mailto:contact@johnmal.dev)
+:computer: [Portfolio](https://www.johnmal.dev/)
+
+### License
+MIT License
+Copyright (c) 2022 Aryse Gabrielle Pagano & John Malapit
