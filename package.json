@@ -7,7 +7,19 @@
     "start": "node server/index.js",
     "build": "cd client && npm install && npm run build"
   },
-  "author": "Aryse <medictansy@gmail.com>",
+  
+  "contributors": [
+    {
+      "name" : "Aryse Tansy",
+      "email" : "paganowebdev@gmail.com",
+      "url" : "http://pagano.dev/"
+    },
+    {
+      "name" : "John Malapit",
+      "email" : "contact@johnmal.dev",
+      "url" : "https://www.johnmal.dev/"
+    }
+  ],
   "license": "MIT",
   "dependencies": {
     "cors": "^2.8.5",

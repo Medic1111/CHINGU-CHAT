@@ -18,7 +18,7 @@ This is a chat application where a login user inputs a desired room ID, and is a
     - [Session 1](#session-1)
     - [Session 2](#session-2)
     - [Session 3](#session-3)
-- [Authors](#authors)
+- [Contributors](#contributors)
 
 ## Overview
 
@@ -99,7 +99,18 @@ The goal was to build a real-time chat interface where multiple users can intera
 - After Session
   - John: update login card placement, enhance README docs
 
-### Authors
+### Contributors
 
-- Aryse Gabrielle Pagano - [GitHub](https://github.com/medic1111/)
-- John Malapit - [GitHub](https://github.com/johnmal-dev), [LinkedIn](https://www.linkedin.com/in/john-mal/)
+:point_right: Aryse Tansy
+
+:e-mail: paganowebdev@gmail.com
+
+:computer: [Portfolio](https://www.pagano.dev/)
+
+---
+
+:point_right: John Malapit
+
+:e-mail: contact@johnmal.dev
+
+:computer: [Portfolio](https://www.johnmal.dev/)
