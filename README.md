@@ -2,7 +2,7 @@
 
 ![Demo of App](demo.gif)
 
-This is a chat application where a login user inputs a desired room ID, and is able to join the chat and communicate in real-time.
+This is a chat application where a user inputs a username and the desired room ID, and can join the chat and communicate in real-time.
 
 > Project developed in a pair-programming session arranged by the Chingu.io team
 
@@ -13,12 +13,13 @@ This is a chat application where a login user inputs a desired room ID, and is a
   - [Screenshots](#screenshots)
   - [Links](#links)
 - [Our Process](#our-process)
-  - [Built with](#built-with)
+  - [Built With](#built-with)
   - [Session Logs](#session-logs)
     - [Session 1](#session-1)
     - [Session 2](#session-2)
     - [Session 3](#session-3)
 - [Contributors](#contributors)
+- [License](#license)
 
 ## Overview
 
@@ -92,7 +93,7 @@ The goal was to build a real-time chat interface where multiple users can intera
   - [x] Testing
   - [x] Address bugs if any found
   - [x] Deploy Production version
-  - [ ] Enhance documentation
+  - [x] Enhance documentation
   - [x] Add MIT license
   - [x] Consider future features
   - [x] Celebrate
@@ -101,16 +102,14 @@ The goal was to build a real-time chat interface where multiple users can intera
 
 ### Contributors
 
-:point_right: Aryse Tansy
-
+**:point_right: Aryse Tansy**
 :e-mail: paganowebdev@gmail.com
-
 :computer: [Portfolio](https://www.pagano.dev/)
 
----
-
-:point_right: John Malapit
-
-:e-mail: contact@johnmal.dev
-
+**:point_right: John Malapit**
+:e-mail: [contact@johnmal.dev](mailto:contact@johnmal.dev)
 :computer: [Portfolio](https://www.johnmal.dev/)
+
+### License
+MIT License
+Copyright (c) 2022 Aryse Gabrielle Pagano & John Malapit
