@@ -35,7 +35,7 @@ The goal was to build a real-time chat interface where multiple users can intera
 ### Links
 
 - GitHub: [github.com/medic1111/pair-session-chat](https://github.com/medic1111/pair-session-chat)
-- Live Site: [chingu-chat.herokuapp.com/](https://chingu-chat.herokuapp.com/)
+- Live Site: [chingu-chat.onrender.com/](https://chingu-chat.onrender.com/)
 
 ## Our Process
 
